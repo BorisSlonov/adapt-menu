@@ -1,0 +1,274 @@
+/* Сброс */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+html,
+body {
+    font-family: sans-serif;
+
+}
+
+/* Сброс */
+
+/*красит ссылки*/
+.menu-container a {
+    color: rgba(7, 7, 7, 0.664);
+
+}
+
+.menu-container a:hover {
+    color: #3366FF;
+    transition: 0.6s;
+
+}
+
+/*красит ссылки*/
+
+
+
+
+
+/*флекс-контейнер лого+нав+икон*/
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+/*флекс-контейнер лого+нав+икон*/
+
+
+
+
+
+/* контейнер навигации */
+.main-ul {
+    position: relative;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    height: 20px;
+    width: 100vw;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #FEFEFE;
+    border-bottom: 30px solid #FEFEFE;
+    box-shadow: 1px 2px 5px 1px rgb(214, 213, 213);
+    z-index: 1;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+   
+}
+
+/* контейнер навигации */
+
+
+
+
+/*выпадающие меню*/
+.submenu_item {
+    width: 100vw;
+    height: 200px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(255, 255, 255 0.1);
+}
+
+.main-ul li:hover .submenu_item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.submenu li a {
+    margin-left: 50px;
+}
+
+
+/*выпадающие меню*/
+
+
+
+/*    позиционирование выпадаюших меню.   */
+
+/*
+.submenu .новыйкласс { 
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+*/
+.submenu .vklad-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.submenu .card-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.submenu .credit-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+}
+
+.submenu .micro-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+}
+
+.submenu .strahovka-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+}
+
+.submenu .ipoteka-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+}
+
+.submenu .invest-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+}
+
+.submenu .buisness-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+
+}
+
+.submenu .news-ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+
+}
+
+/*    позиционирование выпадаюших меню.   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*расположение, адрес картинок и размер иконок*/
+.icon-items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-search {
+    background-image: url(/search.svg);
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 15px;
+
+
+}
+
+.icon-user {
+    background-image: url(/user.svg);
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    padding: 15px;
+}
+
+/*расположение, адрес картинок и размер иконок*/
+
+
+
+
+
+
+
+
+/* медиа */
+@media (min-width:707px) and (max-width: 980px) {
+    * {
+        font-size: 9px;
+    }
+
+    .submenu .logo {
+        width: 100px;
+    }
+
+    .icon-search,
+    .icon-user {
+        padding: 5px;
+    }
+
+
+}
+
+@media (min-width:100px) and (max-width:706px) {
+    * {
+        font-size: 7px;
+    }
+
+    .submenu .logo {
+        display: none;
+    }
+
+    .icon-user {
+        display: none;
+    }
+
+    .icon-search {
+        padding: 5px;
+
+    }
+}
